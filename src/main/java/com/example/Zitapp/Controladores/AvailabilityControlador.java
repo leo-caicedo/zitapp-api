@@ -20,6 +20,9 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/availability") // Prefijo base para este controlador
 @Tag(name = "Disponibilidad", description = "Operaciones para gestionar la disponibilidad de los negocios")
+@CrossOrigin(
+        origins = "https://zitapp.netlify.app/"
+)
 public class AvailabilityControlador {
 
     private final AvailabilityServicio availabilityServicio;

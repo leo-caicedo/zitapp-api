@@ -31,6 +31,9 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/users")
 @Tag(name = "Usuarios", description = "API para gestionar usuarios")
+@CrossOrigin(
+        origins = "https://zitapp.netlify.app/"
+)
 public class UsersControlador {
 
     @Autowired

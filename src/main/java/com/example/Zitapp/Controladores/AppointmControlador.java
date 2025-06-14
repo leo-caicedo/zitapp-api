@@ -23,6 +23,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/appointments")
 @Tag(name = "Citas", description = "API para gestión de citas")
+@CrossOrigin(
+        origins = "https://zitapp.netlify.app/"
+)
 public class AppointmControlador {
 
     @Autowired

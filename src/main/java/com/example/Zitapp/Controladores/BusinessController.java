@@ -20,6 +20,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/businesses") // Este es el RequestMapping base para el controlador
 @Tag(name = "Negocios", description = "API para gestionar negocios")
+@CrossOrigin(
+        origins = "https://zitapp.netlify.app/"
+)
 public class BusinessController {
 
     private final BusinessService businessService;

@@ -19,6 +19,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/notifications")
+@CrossOrigin(
+        origins = "https://zitapp.netlify.app/"
+)
 public class NotificationController {
 
         @Autowired

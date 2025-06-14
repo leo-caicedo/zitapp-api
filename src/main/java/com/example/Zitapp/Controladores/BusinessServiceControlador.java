@@ -17,6 +17,9 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/services")
 @Tag(name = "Servicios", description = "CRUD de servicios ofrecidos por los negocios")
+@CrossOrigin(
+        origins = "https://zitapp.netlify.app/"
+)
 public class BusinessServiceControlador {
 
     private final BusinessServiceServicio serviceServicio;
